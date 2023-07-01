@@ -16,8 +16,10 @@ Requirement:
 
 Usage:
 
-1. Use textfile editor to edit config.py
+1. [Download](https://github.com/axzxc1236/pySharepointDownloader/archive/refs/heads/main.zip) and extract pySharepointDownloader
 
-2. If you are Windows user, click "run.bat"
+2. Use textfile editor (Notepad) to edit config.py
 
-3. If you are Linux user, use run.sh (Might work for other Unix file systems but I didn't test)
+3. If you are Windows user, click "run.bat"
+
+4. If you are Linux user, use run.sh (Might work for other Unix file systems but I didn't test)
