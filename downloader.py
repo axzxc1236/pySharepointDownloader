@@ -67,7 +67,7 @@ class Downloader:
                     raise RateLimitException()
                 elif response.status_code > 299:
                     raise CannotContinueException(f"While reading file list, program encountered unknown HTTP response code {response.status_code}")
-                if "You've received a link to a folder that requires a password" in response.text or 'input id="txtPassword"' in response.text:
+                if "You've received a link to a folder that requires a password" in response.text or 'input id="txtPassword"' in response.text or 'input name="txtPassword"' in response.text:
                     if password := task["password"]:
                         # Extract post url
                         if (host := hostURLPattern.match(task["link"])) and (formAction := passwordPostURLPattern.search(response.text)):
