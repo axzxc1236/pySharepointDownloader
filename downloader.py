@@ -106,7 +106,7 @@ class Downloader:
                     webdavEndpoint = match.group(1) + "/" + "/".join(params["id"][0].split("/")[3:])
                     logging.debug(f"webdav Endpoint: {webdavEndpoint}")
                 
-                with open("sharepoint_rclone.conf", mode="w") as f:
+                with open("sharepoint_rclone.conf", mode="w", encoding="utf8") as f:
                     f.write("[webdav]\n")
                     f.write("type = webdav\n")
                     f.write(f"url = {webdavEndpoint}\n")
